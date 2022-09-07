@@ -1,7 +1,8 @@
 class Solution {
 public:
-    int dp[31];
     int fib(int n) {
+        int dp[n+1];
+        
         if(n <= 1) return n;
         
         if(dp[n] > 0) return dp[n];
