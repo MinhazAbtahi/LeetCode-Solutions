@@ -7,9 +7,9 @@ public:
         
         for (int i = 0; i < size; i++) {
             if(s[x] == t[i]) x++;
-            if(x == len) return true;
+            if(x == len) break;
         }
         
-        return false;
+        return x == len;
     }
 };
